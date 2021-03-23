@@ -33,9 +33,14 @@ main .content nav .logo {
     cursor: pointer;
 }
 
+main .content nav .navLinks {
+    display: block;
+}
+
 main .content nav .navLinks ul {
     position: relative;
     list-style: none;
+    display: block;
 }
 
 main .content nav .navLinks ul li {
@@ -46,6 +51,7 @@ main .content nav .navLinks ul li {
 }
 
 main .content nav .navLinks ul li a {
+    display: block;
     color: #3434ff;
     text-decoration: none;
     font-weight: 700;
@@ -75,6 +81,7 @@ main .content nav .loginBtn {
     padding: 5px;
     margin: 0 20px;
     color: #3434ff;
+    display: none;
 }
 
 button {
@@ -264,7 +271,7 @@ main footer .moreInfo a:hover {
 
 /* Responsive styling of navigation links */
 
-@media (max-width:967px) {
+@media (max-width:1003px) {
     main .content .otherContent {
         width: 100%;
         /* flex-direction: column-reverse; */
@@ -273,10 +280,10 @@ main footer .moreInfo a:hover {
     main .content nav .navLinks {
         padding-bottom: 2%;
         position: absolute;
-        display: none;
+        /* display: none; */
         top: 0;
         right: 0;
-        height: 50vh;
+        height: 55vh;
         /* border: 1px solid black; */
         transition: 0.5s;
         width: 70%;
@@ -285,7 +292,7 @@ main footer .moreInfo a:hover {
         z-index: 1000;
     }
     main .content nav .navLinks ul {
-        margin-top: 25%;
+        /* margin-top: 40%; */
         position: absolute;
         display: flex;
         justify-content: center;
@@ -375,6 +382,7 @@ main footer .moreInfo a:hover {
         max-height: 500px;
     }
     main .content nav .loginBtn button {
+        padding: 5px;
         visibility: hidden;
     }
     #active {
@@ -384,5 +392,8 @@ main footer .moreInfo a:hover {
         font-size: 1em;
         /* position: absolute; */
         z-index: 2000;
+    }
+    main .content nav .navLinks ul {
+        margin-top: 55px;
     }
 }

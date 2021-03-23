@@ -10,22 +10,19 @@ var login = document.querySelector(".loginBtn button.login");
 
 console.log(document.querySelector("nav"));
 
+
+// open responsive navLinks
 bars.addEventListener("click", () => {
-    // console.log("click");
     document.querySelector("#navlinks").style.display = "block";
     signup.setAttribute("id", "active");
     login.setAttribute("id", "active");
-    bars.style.display = "none"
-        // console.log(signinSignup);
 });
 
+// close responsive navLinks
 cross.addEventListener("click", () => {
-    console.log("click");
     document.querySelector("#navlinks").style.display = "none";
-    // document.querySelector("#navlinks").style.display = "block";
     signup.removeAttribute("id", "active");
     login.removeAttribute("id", "active");
-    bars.style.display = "block"
 
 });
 
@@ -35,3 +32,12 @@ var date = new Date();
 var year = date.getFullYear();
 console.log(year);
 document.querySelector("#date").innerHTML = year;
+
+// display navLinks on screen grow
+window.addEventListener("resize", function() {
+    var width = screen.width;
+    // console.log(width);
+    if (width >= 1003) {
+        document.querySelector("#navlinks").style.display = "block";
+    }
+}, true);
