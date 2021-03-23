@@ -271,6 +271,7 @@ main footer .moreInfo a:hover {
     }
     /* responsive styling of links */
     main .content nav .navLinks {
+        padding-bottom: 2%;
         position: absolute;
         display: none;
         top: 0;
