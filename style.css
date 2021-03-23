@@ -233,6 +233,7 @@ main footer {
     align-items: center;
     flex-direction: column;
     background: #adadad;
+    margin-top: 2%;
 }
 
 main footer .moreInfo {
@@ -255,6 +256,9 @@ main footer .moreInfo a:hover {
 }
 
 
+/* signin signup btns visible in responsive navlinks */
+
+
 /* Responsive design */
 
 
@@ -275,28 +279,30 @@ main footer .moreInfo a:hover {
         /* border: 1px solid black; */
         transition: 0.5s;
         width: 70%;
+        background: #ffffff;
+        box-shadow: 0 3px 0 5px rgba(163, 163, 163, 0.356);
+        z-index: 1000;
     }
     main .content nav .navLinks ul {
-        position: relative;
+        margin-top: 25%;
+        position: absolute;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background: #ffffff;
         /* border: 2px solid red; */
-        box-shadow: 0 3px 0 5px rgba(163, 163, 163, 0.356);
-        z-index: 1000;
         width: 100%;
         /* height: 100%; */
+        /* border: 2px solid red; */
     }
     #cross {
         display: block;
     }
     main .content nav .navLinks ul li {
         /* display: block; */
-        padding: 25px 0;
+        padding: 2% 0;
         margin: 10px;
-        padding: 20px 0;
+        /* padding: 20px 0; */
         transition: 0.5s;
     }
     main .content nav .navLinks ul li#cross {
@@ -304,7 +310,7 @@ main footer .moreInfo a:hover {
         position: absolute;
         /* display: none; */
         right: 8px;
-        top: 8px;
+        top: 0px;
         font-weight: 800;
         font-size: 2em;
         z-index: 2000;
@@ -317,13 +323,24 @@ main footer .moreInfo a:hover {
     main .content nav .navLinks ul li.fa-times:hover {
         background: #fff;
         color: #fd4848;
-        border: 1px solid #fd4848;
+        /* border: 1px solid #fd4848; */
         transition: 0.5s;
     }
     #bars {
         display: block;
     }
+    /* loging btn in responsive navlinks */
+    main .content nav .loginBtn {
+        /* border: 2px solid red; */
+        width: 50%;
+        visibility: visible;
+        display: flex;
+        /* justify-content: space-around; */
+        /* flex-direction: column-reverse; */
+    }
 }
+
+@media (max-width:539px) {}
 
 
 /* end of responsive styling of navigation links */
@@ -358,5 +375,13 @@ main footer .moreInfo a:hover {
     }
     main .content nav .loginBtn button {
         visibility: hidden;
+    }
+    #active {
+        visibility: visible;
+        /* padding: 2px; */
+        /* margin: 2px; */
+        font-size: 1em;
+        /* position: absolute; */
+        z-index: 2000;
     }
 }
