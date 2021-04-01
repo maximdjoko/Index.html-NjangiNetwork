@@ -1,11 +1,9 @@
 console.log("working");
 
 var bars = document.querySelector("#bars");
-// console.log(bars);
 var cross = document.querySelector("#cross");
 var signup = document.querySelector(".loginBtn button.signup");
 var login = document.querySelector(".loginBtn button.login");
-// console.log(signinSignup);
 
 
 console.log(document.querySelector("nav"));
